@@ -7,6 +7,10 @@ void setup() {
 }
 
 void loop() {
+  Serial.print("[");
+  Serial.print(millis());
+  Serial.print("]");
+  Serial.println("Loop");
   digitalWrite(LED_BUILTIN, HIGH);
   delay(1000);
   digitalWrite(LED_BUILTIN, LOW);
